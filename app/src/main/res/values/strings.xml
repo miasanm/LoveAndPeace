@@ -3,7 +3,7 @@
     <string name="title_home">主页</string>
     <string name="title_dashboard">消息</string>
     <string name="title_notifications">我的</string>
-    <string name="title_activity_login">登陆</string>
+    <string name="title_activity_login">观爱</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">密码</string>
     <string name="action_sign_in">登陆</string>
