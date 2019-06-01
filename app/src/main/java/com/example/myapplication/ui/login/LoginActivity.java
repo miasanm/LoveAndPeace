@@ -128,6 +128,8 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent1);
             }
         });
+        
+
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
