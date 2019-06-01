@@ -39,4 +39,9 @@ public class MainActivity extends AppCompatActivity {
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+    public void onBackPressd(){
+        super.onBackPressed();
+        ActivityCollector.finishAll();
+    }
+
 }
