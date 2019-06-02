@@ -16,21 +16,12 @@ import com.example.myapplication.R;
 
 public class ThreeFragment extends Fragment {
 
-    //View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_three, container,false);
-       /* Button button=view.findViewById(R.id.imageButton);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getContext(),"第三个fragment"
-                        ,Toast.LENGTH_SHORT).show();
-            }
-        });
-        return view;*/
+
     }
 
 }
