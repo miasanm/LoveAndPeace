@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
 
      @Override
      public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -57,12 +59,10 @@ public class MainActivity extends AppCompatActivity {
 
     private FragmentTransaction transaction;
     private FragmentManager fragmentManager;
-
     // 设置默认进来是tab 显示的页面
     private void setDefaultFragment(){
         fragmentManager = getSupportFragmentManager();
         transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.content,new OneFragment());
         transaction.commit();
     }
 

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment2"
+    android:background="@drawable/message"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.OneFragment">
@@ -21,25 +22,18 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
-                android:contentDescription="@string/app_name"
-                android:id="@+id/image2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FFEB3B"
-                android:src="@android:drawable/ic_dialog_email" />
-
-            <android.support.v7.widget.RecyclerView
+            <ListView
+                android:id="@+id/list_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"/>
         </LinearLayout>
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewpager_launch"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </android.support.v4.view.ViewPager>
 
         <android.support.design.widget.BottomNavigationView
             android:id="@+id/navigation_launch"
