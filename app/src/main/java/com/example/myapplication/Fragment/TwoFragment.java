@@ -1,6 +1,7 @@
 package com.example.myapplication.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,7 +13,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
-
+import com.example.myapplication.data.LoginDataSource;
+import com.example.myapplication.ui.login.LoginActivity;
 
 
 public class TwoFragment extends Fragment {
@@ -34,6 +36,8 @@ public class TwoFragment extends Fragment {
             public void onClick(View arg0) {
                 // TODO Auto-generated method stub
                 Toast.makeText(getActivity(), "success", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
             }
         });
     }
