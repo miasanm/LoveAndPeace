@@ -19,7 +19,6 @@ import com.example.myapplication.ui.login.LoginActivity;
 
 public class OneFragment extends Fragment {
 
-    View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

@@ -11,8 +11,11 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
+import com.example.myapplication.ChatActivity;
 import com.example.myapplication.R;
+import com.example.myapplication.ui.login.LoginActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,9 +43,19 @@ public class TwoFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         adapter = new SimpleAdapter(getActivity(), getData(), R.layout.listview,
-                new String[]{"img", "title", "body"},
+                new String[]{"img", "id", "message"},
                 new int[]{R.id.itemimg, R.id.itemtitle, R.id.itembody});      //配置适配器，并获取对应Item中的ID
         lv.setAdapter(adapter);
+        lv.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent = new Intent(getActivity(), ChatActivity.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+
     }
     //数据的获取@！
     private List<? extends Map<String, ?>> getData() {
@@ -50,20 +63,20 @@ public class TwoFragment extends Fragment {
 
 //将需要的值传入map中
         Map<String, Object> map = new HashMap<String, Object>();
-        map.put("title", "软院最新公告事项");
-        map.put("body", "不知道未来几天有什么最新消息？那就点我查看查看呗");
+        map.put("id", "爱护小动物");
+        map.put("message", "你好");
         map.put("img", R.drawable.boy);
         list.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("title", "校内最新消息通知");
-        map.put("body", "校级活动，化工电影本周放啥？艺设妹子有什么动向？点我查看");
+        map.put("id", "小菠萝");
+        map.put("message", "你好");
         map.put("img", R.drawable.girl);
         list.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("title", "圈内交流园地");
-        map.put("body", "来都来了，何不进来说几句？");
+        map.put("id", "日行一善");
+        map.put("message", "你好");
         map.put("img", R.drawable.woman);
         list.add(map);
 
