@@ -16,13 +16,13 @@ import com.example.myapplication.R;
 public class ThreeFragment extends Fragment {
 
     CircleImageView Head_icon;
-    TextView Seting,Collection,Count,ConnectMe;
-
+    TextView Seting,Collection,Count,ConnectMe,name_id;
+    CountActivity co = new CountActivity();
+    String str;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_three, container, false);
-
     }
 
     @Override
@@ -33,8 +33,10 @@ public class ThreeFragment extends Fragment {
         Collection = getActivity().findViewById(R.id.Collection);
         Count = getActivity().findViewById(R.id.Count);
         ConnectMe = getActivity().findViewById(R.id.connectme);
+
         SetListeners();
     }
+
     private void SetListeners(){
         OnClik onclik = new OnClik();
         Head_icon.setOnClickListener(onclik);

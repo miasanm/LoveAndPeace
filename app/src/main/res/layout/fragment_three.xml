@@ -18,7 +18,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/name_space"
-        android:layout_marginTop="45dp">
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="170dp">
 
        <com.example.myapplication.Mine.CircleImageView
            android:id="@+id/Head_icon"
@@ -27,18 +28,6 @@
            android:scaleType="centerCrop"
            android:src="@mipmap/icon_head"
            android:background="@drawable/iconhead"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/Head_icon"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="40dp"
-            android:text="观爱首席铲屎官"
-            android:textColor="#827788"
-            android:textSize="25sp"
-            android:id="@+id/Name_id"
-            android:gravity="center"
-            />
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
