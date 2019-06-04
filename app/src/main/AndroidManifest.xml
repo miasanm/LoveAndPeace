@@ -7,6 +7,10 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="permissions.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="permissions.GET_ACCOUNTS"/>
+    <uses-permission android:name="permissions.READ_CONTACTS"/>
+    <uses-permission android:name="permissions.READ_CALENDAR"/>
 
 
     <application

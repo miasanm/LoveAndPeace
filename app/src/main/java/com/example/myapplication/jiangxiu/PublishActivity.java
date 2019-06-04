@@ -39,7 +39,6 @@ public class PublishActivity extends AppCompatActivity {
         initGridView();
 
 
-
         Button button = (Button) findViewById( R.id.push );
         button.setOnClickListener( new View.OnClickListener(){
 
