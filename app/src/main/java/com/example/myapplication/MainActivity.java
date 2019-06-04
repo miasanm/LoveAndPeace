@@ -2,44 +2,69 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
+
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.view.MenuItem;
-import android.widget.TextView;
+
+import com.example.myapplication.Fragment.OneFragment;
+import com.example.myapplication.Fragment.ThreeFragment;
+import com.example.myapplication.Fragment.TwoFragment;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }
-            return false;
+
+     @Override
+     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+         fragmentManager = getSupportFragmentManager();
+         transaction = fragmentManager.beginTransaction();
+         switch (item.getItemId()) {
+             case R.id.navigation_home:
+                 transaction.replace(R.id.content,new OneFragment());
+                 transaction.commit();
+                 return true;
+             case R.id.navigation_dashboard:
+                 transaction.replace(R.id.content,new TwoFragment());
+                 transaction.commit();
+                 return true;
+             case R.id.navigation_notifications:
+                 transaction.replace(R.id.content,new ThreeFragment());
+                 transaction.commit();
+                 return true;
+
         }
+        return false;
+     }
     };
+
+
+    public MainActivity() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        mTextMessage = findViewById(R.id.message);
+        BottomNavigationView navView = findViewById(R.id.navigation);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
     }
 
-    public void onBackPressd(){
+    private FragmentTransaction transaction;
+    private FragmentManager fragmentManager;
+    // 设置默认进来是tab 显示的页面
+    private void setDefaultFragment(){
+        fragmentManager = getSupportFragmentManager();
+        transaction = fragmentManager.beginTransaction();
+        transaction.commit();
+    }
+
+    private void onBackPressd(){
         super.onBackPressed();
         ActivityCollector.finishAll();
     }
