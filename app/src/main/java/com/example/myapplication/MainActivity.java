@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 
@@ -9,7 +8,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.example.myapplication.Fragment.OneFragment;
 import com.example.myapplication.Fragment.ThreeFragment;
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit();
     }
 
-    public void onBackPressd(){
+    private void onBackPressd(){
         super.onBackPressed();
         ActivityCollector.finishAll();
     }
