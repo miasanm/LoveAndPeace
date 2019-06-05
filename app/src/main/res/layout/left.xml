@@ -9,7 +9,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_gravity="top"
-        android:src="@drawable/boy" />
+        android:src="@mipmap/c1" />
 
     <TextView
         android:id="@+id/tvname"

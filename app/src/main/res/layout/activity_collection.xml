@@ -11,7 +11,7 @@
         android:id="@+id/container1"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="200dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_btn3"
         tools:context="com.huawei.logsensor.LaunchActivity">
@@ -22,75 +22,67 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:id="@+id/c4"
+            android:id="@+id/cl"
             android:layout_alignParentLeft="true"
             android:layout_margin="10dp"
-            android:src="@mipmap/c4" />
+            android:src="@mipmap/c1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/name3"
-            android:text="观爱首席铲屎官"
+            android:id="@+id/name1"
+            android:text="Iris"
             android:textColor="#576B95"
             android:textSize="12dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/c4"/>
+            android:layout_toRightOf="@id/cl"/>
 
         <TextView
-            android:id="@+id/content3"
+            android:id="@+id/content1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/name3"
+            android:layout_below="@+id/name1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_toRightOf="@id/c4"
+            android:layout_toRightOf="@id/cl"
             android:minLines="2"
-            android:text="我发现了一只小猫！"
+            android:text="多次在回家的路上偶遇到这只小狗狗！特别可爱但是也可怜o(╥﹏╥)o"
             android:textSize="15dp" />
     </RelativeLayout>
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="102dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
 
-        <ImageView
-            android:id="@+id/cat5"
-            android:layout_width="138dp"
-            android:layout_height="79dp"
-            android:layout_marginLeft="75dp"
-            android:src="@mipmap/cat5"></ImageView>
+            <ImageView
+                android:id="@+id/dog1"
+                android:layout_width="104dp"
+                android:layout_height="89dp"
+                android:layout_marginLeft="150dp"
+                android:src="@mipmap/dog1"></ImageView>
 
-        <ImageView
-            android:id="@+id/cat6"
-            android:layout_width="195dp"
-            android:layout_height="78dp"
-            android:layout_toRightOf="@id/cat5"
-            android:layout_marginRight="65dp"
-            android:src="@mipmap/cat6"></ImageView>
+            <ImageButton
+                android:id="@+id/talk3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dog1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="3dp"
+                android:background="#0000"
+                android:src="@mipmap/icon_setting" />
 
-        <ImageButton
-            android:id="@+id/talk3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/cat5"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="3dp"
-            android:src="@mipmap/icon_setting"
-            android:background="#0000"/>
-
-        <ImageButton
-            android:id="@+id/collect3"
-            android:layout_width="20dp"
-            android:layout_height="24dp"
-            android:layout_below="@id/cat6"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="40dp"
-            android:background="#0000"
-            android:src="@mipmap/icon_setting" />
-    </RelativeLayout>
+            <ImageButton
+                android:id="@+id/collect3"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_below="@id/dog1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:background="#0000"
+                android:src="@mipmap/icon_setting" />
+        </RelativeLayout>
 
 
     <RelativeLayout

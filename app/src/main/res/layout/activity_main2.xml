@@ -99,7 +99,7 @@
                 android:src="@mipmap/cat6"></ImageView>
 
             <ImageButton
-                android:id="@+id/talk3"
+                android:id="@+id/talk1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cat5"
@@ -109,7 +109,7 @@
                 android:background="#0000"/>
 
             <ImageButton
-                android:id="@+id/collect3"
+                android:id="@+id/collect"
                 android:layout_width="20dp"
                 android:layout_height="24dp"
                 android:layout_below="@id/cat6"
@@ -300,7 +300,7 @@
                 android:src="@mipmap/dog1"></ImageView>
 
             <ImageButton
-                android:id="@+id/talk1"
+                android:id="@+id/talk3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/dog1"
@@ -310,7 +310,7 @@
                 android:background="#0000"/>
 
             <ImageButton
-                android:id="@+id/collect"
+                android:id="@+id/collect3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/dog1"
