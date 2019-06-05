@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD700"
+        android:layout_gravity="top">
+        <TextView
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="176dp"
+            android:layout_marginTop="8dp"
+            android:text="广场"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/search"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="#0000"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icol"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@mipmap/icol"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name1"
+            android:text="智障室友"
+            android:textColor="#576B95"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/icol"/>
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/icol"
+            android:minLines="3"
+            android:text="关爱智障室友从我做起！"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="163dp">
+
+        <ImageView
+            android:id="@+id/cat1"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_marginLeft="35dp"
+            android:src="@mipmap/cat2"></ImageView>
+
+        <ImageView
+            android:id="@+id/cat2"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_toRightOf="@id/cat1"
+            android:src="@mipmap/cat2"></ImageView>
+
+        <ImageView
+            android:id="@+id/talk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/talk1" />
+
+        <ImageView
+            android:id="@+id/collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cat2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:src="@mipmap/collect" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="270dp">
+
+        <TextView
+            android:id="@+id/position_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ppublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="344dp"
+            android:background="#0000"
+            android:src="@mipmap/publish" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
