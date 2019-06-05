@@ -138,7 +138,15 @@
                     android:text="S102(芙蓉北大道)"
                     android:background="#FDFDBD"
                     android:textSize="10dp"/>
+
             </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:dividerHeight="8dp"
+            android:scrollbars="none"></ListView>
 
 
         <!-- 第二个帖子 -->
@@ -230,6 +238,13 @@
                 android:text="湖南省.长沙市.岳麓区.岳麓大道" />
         </RelativeLayout>
 
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:dividerHeight="8dp"
+            android:scrollbars="none"></ListView>
+
 
         <!-- 第三个帖子-->
         <RelativeLayout
@@ -316,6 +331,13 @@
                 android:text="湖南省.长沙市.雨花区.洞井铺"
                 />
         </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B3B3B3"
+            android:dividerHeight="8dp"
+            android:scrollbars="none"></ListView>
 
         <!--发布 -->
         <LinearLayout
