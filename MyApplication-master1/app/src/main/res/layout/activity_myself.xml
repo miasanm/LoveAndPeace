@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mine.MyselfActivity"
+    android:background="@mipmap/bigcat">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn3"
+        android:id="@+id/headiconmyself">
+
+        <com.example.myapplication.Mine.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_head"
+            android:background="@drawable/iconhead"
+            android:id="@+id/head1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mysellfid"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_btn3"
+            android:layout_toRightOf="@id/head1"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:layout_gravity="center"
+            android:layout_marginLeft="160dp"
+            android:layout_below="@+id/mysellfid"
+            android:layout_marginTop="5dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex"
+            android:layout_gravity="center"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/mysellfid"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn3"
+            android:layout_below="@+id/sex"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myselfpost"
+        android:orientation="vertical"
+        android:layout_below="@+id/headiconmyself"
+        android:background="@drawable/bg_btn3"
+        android:layout_marginTop="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="#0000"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icol"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:src="@mipmap/icon_setting"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name1"
+                android:text="智障室友"
+                android:textColor="#576B95"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/icol"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/content1"
+                android:text="关爱智障室友从我做起！"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:minLines="3"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_toRightOf="@id/icol"
+                android:layout_below="@+id/name1"/>
+
+            <ImageView
+                android:id="@+id/talk1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/content1"
+                android:layout_toRightOf="@+id/icol"
+                android:src="@mipmap/icon_setting"/>
+
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/content1"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/icon_setting"/>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
