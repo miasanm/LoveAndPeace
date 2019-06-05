@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.huawei.logsensor.LaunchActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_gravity="top">
+            <TextView
+                android:id="@+id/square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="8dp"
+                android:text="广场"
+                android:textColor="#FFD700"
+                android:textSize="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/search"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="#0000" />
+        </RelativeLayout>
+
+        <!-- 第一个帖子-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDFDBD">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/c4"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:src="@mipmap/c4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name3"
+                android:text="观爱首席铲屎官"
+                android:textColor="#576B95"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/c4"/>
+
+            <TextView
+                android:id="@+id/content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/c4"
+                android:minLines="2"
+                android:text="我发现了一只小猫！"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="102dp"
+            android:background="#FDFDBD">
+
+            <ImageView
+                android:id="@+id/cat5"
+                android:layout_width="138dp"
+                android:layout_height="79dp"
+                android:layout_marginLeft="80dp"
+                android:src="@mipmap/cat5"></ImageView>
+
+            <ImageView
+                android:id="@+id/cat6"
+                android:layout_width="195dp"
+                android:layout_height="78dp"
+                android:layout_toRightOf="@id/cat5"
+                android:src="@mipmap/cat6"></ImageView>
+
+            <ImageButton
+                android:id="@+id/talk3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cat5"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/talk1"
+                android:background="#0000"/>
+
+            <ImageButton
+                android:id="@+id/collect3"
+                android:layout_width="20dp"
+                android:layout_height="24dp"
+                android:layout_below="@id/cat6"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:background="#0000"
+                android:src="@mipmap/collect" />
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:background="#FDFDBD">
+                <TextView
+                    android:id="@+id/position_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:background="#FDFDBD"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/position_text_view"
+                    android:text="S102(芙蓉北大道)"
+                    android:background="#FDFDBD"
+                    android:textSize="10dp"/>
+            </RelativeLayout>
+
+
+        <!-- 第二个帖子 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDFDBD">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/c2"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:src="@mipmap/c2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name2"
+                android:text="家有萌宠"
+                android:textColor="#576B95"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/c2"/>
+
+            <TextView
+                android:id="@+id/content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/c2"
+                android:minLines="2"
+                android:text="有要领养小猫咪得嘛？"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FDFDBD">
+
+            <ImageView
+                android:id="@+id/cat7"
+                android:layout_width="123dp"
+                android:layout_height="78dp"
+                android:layout_marginLeft="80dp"
+                android:src="@mipmap/cat7"></ImageView>
+
+            <ImageView
+                android:id="@+id/cat8"
+                android:layout_width="195dp"
+                android:layout_height="78dp"
+                android:layout_toRightOf="@id/cat7"
+                android:src="@mipmap/cat8"></ImageView>
+
+            <ImageButton
+                android:id="@+id/talk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cat7"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/talk1"
+                android:background="#0000"/>
+
+            <ImageButton
+                android:id="@+id/collect2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cat8"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:background="#0000"
+                android:src="@mipmap/collect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:background="#FDFDBD">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:textSize="10dp"
+                android:text="湖南省.长沙市.岳麓区.岳麓大道" />
+        </RelativeLayout>
+
+
+        <!-- 第三个帖子-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDFDBD">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/cl"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:src="@mipmap/c1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name1"
+                android:text="Iris"
+                android:textColor="#576B95"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/cl"/>
+
+            <TextView
+                android:id="@+id/content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/cl"
+                android:minLines="2"
+                android:text="多次在回家的路上偶遇到这只小狗狗！特别可爱但是也可怜o(╥﹏╥)o"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:background="#FDFDBD">
+
+            <ImageView
+                android:id="@+id/dog1"
+                android:layout_width="104dp"
+                android:layout_height="89dp"
+                android:layout_marginLeft="150dp"
+                android:src="@mipmap/dog1"></ImageView>
+
+            <ImageButton
+                android:id="@+id/talk1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dog1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/talk1"
+                android:background="#0000"/>
+
+            <ImageButton
+                android:id="@+id/collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dog1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:src="@mipmap/collect"
+                android:background="#0000"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:background="#FDFDBD">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:textSize="10dp"
+                android:text="湖南省.长沙市.雨花区.洞井铺"
+                />
+        </RelativeLayout>
+
+        <!--发布 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDFDBD">
+
+            <ImageButton
+                android:id="@+id/ppublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="344dp"
+                android:background="#0000"
+                android:src="@mipmap/publish" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#FDFDBD">
+        </RelativeLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_nav_menu" />
+    </LinearLayout>
+</LinearLayout>
