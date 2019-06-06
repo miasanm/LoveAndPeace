@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/duihuakuang">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/countnumber"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/idname"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="账号"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/count_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/idname"
+            android:background="@drawable/bg_btn3"
+            android:hint="是你的账号呀~" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/countpassword"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/textpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="密码"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/password_num"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@+id/countpassword"
+            android:background="@drawable/bg_btn3"
+            android:hint="是你的密码呀~"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/changecountsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorAccent"
+        android:text="修改"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+
+
+</LinearLayout>
