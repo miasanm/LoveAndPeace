@@ -12,7 +12,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 
 public class CircleImageView extends android.support.v7.widget.AppCompatImageView {
-    private Paint mPaint; //画笔
+    private Paint mPaint;   //画笔
 
     private int mRadius; //圆形图片的半径
 
