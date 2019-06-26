@@ -7,13 +7,7 @@ import com.luck.picture.lib.compress.Luban;
 import com.luck.picture.lib.config.PictureConfig;
 import com.luck.picture.lib.config.PictureMimeType;
 
-/**
- * 多图选择框架 PictureSelector的初始化配置
- * <p>
- * 作者： 周旭 on 2017年8月8日 0008.
- * 邮箱：374952705@qq.com
- * 博客：http://www.jianshu.com/u/56db5d78044d
- */
+
 
 public class PictureSelectorConfig {
 
