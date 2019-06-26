@@ -33,7 +33,7 @@ public class CircleImageView extends android.support.v7.widget.AppCompatImageVie
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        //因为是圆形图片，所以应该让宽高保持一致
+         //因为是圆形图片，所以应该让宽高保持一致
         int size = Math.min(getMeasuredWidth(), getMeasuredHeight());
         mRadius = size / 2;
         setMeasuredDimension(size, size);
