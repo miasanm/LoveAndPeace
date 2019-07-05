@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/connectmebg"
+    tools:context=".Mine.ConnectMeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="观爱"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:minLines="4"
+            android:text="        这是一款专门为爱护流浪狗猫的人士设置的一款社交APP。"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minLines="4"
+            android:text="        这里将提供关于流浪猫狗的相关医护知识，且用户可通过此平台提供流浪猫狗生活情况与地址，呼吁更多爱猫狗人士收养照顾。各地区流浪动物收留所也可根据此平台及时有效的提供帮助。"
+            android:textSize="27sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minLines="4"
+            android:text="        关爱流浪动物，让我们一起行动起来吧！"
+            android:textSize="27sp" />
+
+
+    </LinearLayout>
+</LinearLayout>
