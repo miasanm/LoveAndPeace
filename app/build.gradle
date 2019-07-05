@@ -9,8 +9,29 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+
+        javaCompileOptions {
+
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
+
+
+
+
+
     }
     buildTypes {
+
+
+
+
+
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -36,4 +57,12 @@ dependencies {
     implementation 'org.jetbrains:annotations-java5:15.0'
 
     implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+
+
+
+    implementation 'com.jakewharton:butterknife:9.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
+
+
 }
