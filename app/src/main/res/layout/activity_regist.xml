@@ -171,8 +171,8 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="108dp"
-                android:layout_marginEnd="110dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
                 android:text="注册即代表同意《用户协议》" />
         </RelativeLayout>
 
